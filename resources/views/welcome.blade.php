@@ -128,5 +128,8 @@
                 </div>
             </div>
         </div>
+
+    <script src="{{ url('js/app.js') }}"></script>
+
     </body>
 </html>
