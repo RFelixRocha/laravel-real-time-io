@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SiteController;
 use App\Models\Post;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
@@ -16,7 +17,7 @@ use Illuminate\Support\Str;
 |
 */
 
-Route::get('/post',function (){
+Route::get('/posts',function (){
 
     $user = User::first();
 
@@ -24,8 +25,7 @@ Route::get('/post',function (){
         'title' =>  Str::random(150),
         'body' => Str::random(400),
     ]);
+
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[SiteController::class, 'index']);
