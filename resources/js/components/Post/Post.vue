@@ -1,9 +1,10 @@
 <template>
 <div>
-    <h4>Primeiro post</h4>
-    <div v-for="(post,indice) in posts.data" :key="indice">
-        {{ post.title}}
-        <hr>
+    <h1 class="text-center text-3x1 uppercase font-black py-8">Primeiro post</h1>
+    <div
+        v-for="(post,indice) in posts.data" :key="indice"
+        class="bg-white w-full p-4 my-4 rounded-xl shadow border">
+        <p>{{ post.title}}</p>
     </div>
 </div>
 </template>

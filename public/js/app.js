@@ -1935,6 +1935,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -30845,13 +30846,21 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("h4", [_vm._v("Primeiro post")]),
+      _c(
+        "h1",
+        { staticClass: "text-center text-3x1 uppercase font-black py-8" },
+        [_vm._v("Primeiro post")]
+      ),
       _vm._v(" "),
       _vm._l(_vm.posts.data, function(post, indice) {
-        return _c("div", { key: indice }, [
-          _vm._v("\n        " + _vm._s(post.title) + "\n        "),
-          _c("hr")
-        ])
+        return _c(
+          "div",
+          {
+            key: indice,
+            staticClass: "bg-white w-full p-4 my-4 rounded-xl shadow border"
+          },
+          [_c("p", [_vm._v(_vm._s(post.title))])]
+        )
       })
     ],
     2

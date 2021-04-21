@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ url('css/app.css') }}">
 </head>
 <body class="antialiased">
-<div id="app">
+<div id="app" class="container mx-auto">
     @yield('content')
 </div>
 <script src="{{ mix('js/app.js') }}"></script>
